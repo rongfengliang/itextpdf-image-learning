@@ -50,8 +50,8 @@ public class Application {
         try {
             for (String key : data.keySet()) {
                 String value = data.get(key);
+                fields.setFieldProperty(key,"textsize",12f,null);
                 fields.setField(key, value);
-
             }
         } catch (Exception e) {
             e.printStackTrace();
